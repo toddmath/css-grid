@@ -25,7 +25,26 @@
     .container {
       display: grid;
       gap: 20px;
-      grid-template-columns: repeat(10, 1fr);
+      border: 10px solid var(--yellow);
+      height: 500px;
+      grid-template-columns: repeat(5, 100px);
+      /* grid-template-rows: repeat(5, 100px); */
+      /* justify-items: center;
+      align-items: center; */
+      place-items: stretch stretch;
+      justify-content: space-between;
+      align-content: space-between;
+    }
+
+    .itm3 {
+      /* height: 50px; */
+      justify-self: center;
+      align-self: center;
+    }
+
+
+    .itm {
+      background: white;
     }
   </style>
 </head>
@@ -34,7 +53,7 @@
   <div class="container">
     <div class="itm itm1">1</div>
     <div class="itm itm2">2</div>
-    <div class="itm itm3">3</div>
+    <div class="itm itm3">Todd is cool</div>
     <div class="itm itm4">4</div>
     <div class="itm itm5">5</div>
     <div class="itm itm6">6</div>
@@ -42,8 +61,8 @@
     <div class="itm itm8">8</div>
     <div class="itm itm9">9</div>
     <div class="itm itm10">10</div>
-    <div class="itm itm11">11</div>
-    <div class="itm itm12">12</div>
+    <!-- <div class="itm itm11">11</div>
+    <div class="itm itm12">1</div>
     <div class="itm itm13">13</div>
     <div class="itm itm14">14</div>
     <div class="itm itm15">15</div>
@@ -71,7 +90,7 @@
     <div class="itm itm37">37</div>
     <div class="itm itm38">38</div>
     <div class="itm itm39">39</div>
-    <div class="itm itm40">40</div>
+    <div class="itm itm40">40</div> -->
   </div>
 
 </body>

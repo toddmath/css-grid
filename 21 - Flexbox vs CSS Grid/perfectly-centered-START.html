@@ -6,6 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/style.css">
   <title>Flexbox vs CSS Grid: Perfectly Centered!</title>
+
+  <style>
+    .hero {
+      height: 200px;
+      background: rgba(255, 255, 255, 0.2);
+      display: grid;
+      justify-items: center;
+      align-content: center;
+      /* display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+    }
+  </style>
 </head>
 
 <body>
@@ -16,12 +30,6 @@
     <p>Get Ready...</p>
   </div>
 
-  <style>
-    .hero {
-      height: 200px;
-      background: rgba(255, 255, 255, 0.2);
-    }
-  </style>
 </body>
 
 </html>

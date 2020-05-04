@@ -6,12 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/style.css">
   <title>Flexbox vs CSS Grid: Unknown Content Size!</title>
+
+  <style>
+    .known {
+      margin: 100px 0;
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      justify-content: center;
+      gap: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- Known Columns, Unknown Content Width -->
-
   <div class="container known">
     <div class="item">Short</div>
     <div class="item">Longerrrrrr</div>
@@ -20,12 +29,6 @@
     </div>
     <div class="item">💩</div>
   </div>
-
-  <style>
-    .known {
-      margin: 100px 0;
-    }
-  </style>
 
 </body>
 

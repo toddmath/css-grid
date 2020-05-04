@@ -6,20 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/style.css">
   <title>Flexbox vs CSS Grid: Axis Flipping!</title>
-</head>
-
-<body>
 
   <!-- Flipping the direction of columns -->
-
-  <script>
+  <script defer async="true">
     function flip(e) {
+      if (e) e.preventDefaullt()
       const flipper = document.querySelector('.flipper');
       flipper.classList.toggle('flip');
     }
   </script>
 
-  <button onClick="flip()">Flip It</button>
+  <style>
+    .flipper {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+
+    .flip {
+      grid-template-columns: 1fr;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button onclick="flip()">Flip It</button>
+
   <div class="flipper">
     <div class="item">1</div>
     <div class="item">2</div>
@@ -31,11 +44,8 @@
     <div class="item">8</div>
     <div class="item">9</div>
     <div class="item">10</div>
-
   </div>
 
-  <style>
-  </style>
 </body>
 
 </html>
